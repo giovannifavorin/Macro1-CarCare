@@ -21,8 +21,4 @@ jobs:
           xcode-version: 15
 
     - name: Build for testing
-      run: |
-        xcodebuild build-for-testing \ 
-        -project CarCare.xcodeproj \ 
-        -scheme CarCare \ 
-        -destination 'platform=iOS Simulator,name=iPhone 15 Pro'
+      run: xcodebuild build-for-testing -project CarCare.xcodeproj -scheme CarCare -destination 'platform=iOS Simulator,name=iPhone 15 Pro' 
